@@ -128,7 +128,7 @@ body{
     color: #ffffff;
 }
 .content{
-    width: 65%;
+    width: 68%;
     margin: 0px auto;
     /* background-color: blueviolet; */
     margin-bottom: 30px;
@@ -208,7 +208,7 @@ body{
     margin-bottom: 50px;
 }
 #why_us_centered{
-    margin-left: 0px; /*+5px zbog marigine wrappera*/
+    /*margin-left: 0px;*/ /*+5px zbog marigine wrappera*/
     margin-top: 80px;
 }
 .why_us_wrapper{
