@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    font-family: 'Arimo', sans-serif;
+    text-decoration: none;
+}
+a{
+    color:rgba(0,0,0,1)
+}
+body{
+    background-color: #ffffff;
+}
+:root{
+    --zlatna:rgb(212, 193, 19);
+    --siva: rgb(212, 212, 212);
+   
+}
+.cleaner{
+    clear: both;
+}
+.block_center{
+    margin: 0px auto;
+}
+#header_wrapper{
+    width: 100%;
+    height: 70px;
+    padding: 10px 0px;
+    /* background-color:rgba(95,119,126,0.3); */
+    background-color: rgba(212, 212, 212,0.6);
+    position: fixed;
+    z-index: 20;
+}
+.logo{
+        width: 330px;
+        height: 70px;
+        margin: 0px 50px 0px 50px;
+        float: left; 
+}
+#meni{
+    /* background-color: grey; */
+    width: 35%; /*538px je taman */
+    float: left;
+    margin-top: 20px;
+    margin-left: 38%;
+
+}
+#meni li{
+    display: inline;
+    /* background-color: orange; */
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 25px;
+    border-left: 2px solid var(--zlatna);
+}
+#meni li a:hover{
+    color:var(--zlatna);
+}
+#autor{
+    border-right: 2px solid var(--zlatna);
+}
+/* .socials{
+    float:left;
+    margin-left: 27%;
+    margin-top: 20px;
+}                                              SOOOOOOOOOOCCCCCCCCCCCCCCCCCCCCCCCCCCIIIIIIIIIIIIIIIIIIIIAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLLLLSSSSSSSSSSSSSSSSSSS
+.socials ul li{
+    display: inline;
+    margin-left: 10px;
+    font-size: 25px;
+} */
+#center_wrapper{
+    width: 100%;
+    height: 950px;
+    background-image: url(../img/wrapper.jpg);
+    background-repeat: no-repeat;
+    background-position:right;
+    position: relative;
+}
+.transparent{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: inherit;
+    
+}
+#center_container{
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    left: 580px;
+    top: 300px;
+    z-index: 10;
+    /* background-color: rgba(0, 0, 0, 0.411); */
+}
+#title{
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    font-size: 12px;
+    color:var(--zlatna);
+    
+    
+}
+#center_content{
+    width: 100%;
+    color: rgb(255,255,255);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25px;
+}
+#btn_container{
+    /* background-color: red; */
+
+    margin-top: 40px;
+    margin-left: 210px;
+}
+.btn{
+    background-color:var(--zlatna);
+    text-align: center;
+    float: left;
+    font-size: 30px;
+    margin-right: 25px;
+    border-radius: 2rem;
+    padding: 10px 30px;
+}
+.btn a{
+    color: #ffffff;
+}
+.content{
+    width: 65%;
+    margin: 0px auto;
+    /* background-color: blueviolet; */
+    margin-bottom: 30px;
+}
+#worker_pic{
+
+    width: 45%;
+    height:850px;
+    background-image: url(../img/worker.jpg) ;
+    background-position: center;
+    float: left;    
+    border: 2px solid #ffffff;
+    box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 2px 0 rgba(0, 0, 0, 0.4);
+
+}
+#biography_wrapper{
+    width: 50%;
+    margin-left: 2.3%;
+    margin-right: 2.3%;
+    margin-top: 30px;
+    /* height: 870px; */
+    /* background-color: red; */
+    float: left;
+}
+.title{
+    /* background-color: blue; */
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+    color: var(--zlatna);
+    margin-top: 50px;
+  
+}
+.hr{
+    border-bottom: 2px solid var(--siva);
+    width: 100px;
+    margin: 10px auto;
+}
+.content_text{
+    /* background-color: lightblue; */
+    width: 100%;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #000000;
+}
+.margin_text{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+}
+/* .content_text p{
+} */
+#service_wrapper{
+    width: 100%;
+    
+    background-color: rgb(233, 233, 233);
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+.service{
+    margin-right: 40px;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    float: left;
+    
+}
+.service_left{
+    margin-left: 125px;
+    text-align: center;
+}
+#service_text{
+    width: 80%;
+    
+    /* background-color: blue; */
+    margin-bottom: 50px;
+}
+#why_us_centered{
+    margin-left: 0px; /*+5px zbog marigine wrappera*/
+    margin-top: 80px;
+}
+.why_us_wrapper{
+    width: 48%;
+    /* background-color: red; */
+    height: 200px;   
+    float: left;
+    margin: 5px;
+}
+.icon{
+    font-size: 130px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    float: left;
+    color: var(--zlatna);
+}
+.file_icon{
+    margin-left: 15px;
+}
+.caption{
+    float: left;
+    margin-left: 40px;
+    font-size:29px;
+}
+.why_us_content_wrapper{
+    width: 70%;
+    height: 95%;
+    /* background-color: white; */
+    margin-left: 30%;
+}
+.small_title{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: var(--zlatna);
+    /* background-color: red; */
+    margin: 10px auto;
+}
+.why_text{
+    text-align: left;
+    /* margin-left: 150px;
+    margin-top: 50px;
+    width: 330px;
+    height: 120px; */
+    /* background-color: orange; */
+}
+.centriran_wrapper{
+    margin-right: 34px;
+}
