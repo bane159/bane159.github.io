@@ -121,6 +121,9 @@ body{
 .btn a{
     color: #ffffff;
 }
+.btn a:hover{
+    color: #000000;
+}
 .content{
     width: 68%;
     margin: 0px auto;
