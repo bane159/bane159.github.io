@@ -23,6 +23,9 @@ body{
 .block_center{
     margin: 0px auto;
 }
+.block_left{
+    float: left;
+}
 #header_wrapper{
     width: 100%;
     height: 70px;
@@ -132,6 +135,7 @@ body{
     margin: 0px auto;
     /* background-color: blueviolet; */
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 #worker_pic{
 
@@ -189,18 +193,40 @@ body{
     padding-top: 30px;
     padding-bottom: 25px;
 }
+.service_center{
+    margin-left: 50px;
+}
 .service{
-    margin-right: 40px;
-    width: 300px;
-    height: 300px;
-    background-color: red;
+    margin-right: 20px;
+    width: 270px;
+    height: 270px;
+    /* background-color: red; */
     float: left;
-    
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(140, 140, 140, 0.542);
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
 }
-.service_left{
-    margin-left: 125px;
+.service_icon{
+    font-size: 80px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+.service_name{
+    width: 80%;
+    color: #000000;
+    font-size: 25px;
     text-align: center;
+    margin-top: 15px;
 }
+.service_desc{
+    text-align: center;
+    margin-top: 10px;
+}
+/* .service_left{
+    margin-left: 140px;
+    text-align: center;
+} */
 #service_text{
     width: 80%;
     
@@ -258,4 +284,47 @@ body{
 }
 .centriran_wrapper{
     margin-right: 34px;
+} 
+#feedback_wrapper{
+    width: 100%;
+    height: 500px;
+    background-color: red;
+}
+#feedback_why{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+}
+#feedback_klient{
+    width: 80%;
+    /* background-color: grey; */
+}
+.cyrcle{
+    border-radius: 50%;
+    width: 130px;
+    float: left;
+}
+.remove_margin{
+    margin: 0px 0px;
+}
+.feedback_pro_margin{
+    margin-left:50px ;
+    margin-top: 10px;
+}
+#feedback_name-job{
+    float: left;
+    width: 300px;
+    height: 100px;
+    /* background-color: orange; */
+    margin-top:15px ;
+    margin-left:20px ;
+}
+#feedback_text_wrap{
+    width: 100%;
+    margin-left:20px ;
+    /* background-color: grey; */
+}
+.feedback_icon{
+    font-size: 60px;
+    color: var(--zlatna);
 }
