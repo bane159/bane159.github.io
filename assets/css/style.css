@@ -26,7 +26,8 @@ textarea {
 :root{
     --zlatna:rgb(212, 193, 19);
     --siva: rgb(212, 212, 212);
-   
+    --manjeSiva: rgb(240, 240, 240);
+    
 }
 .cleaner{
     clear: both;
@@ -40,12 +41,15 @@ textarea {
 .block_right{
     float: right !important;
 }
+.gold{
+    color: var(--zlatna);
+}
 #header_wrapper{
     width: 100%;
     height: 70px;
     padding: 10px 0px;
     /* background-color:rgba(95,119,126,0.3); */
-    background-color: rgba(212, 212, 212,0.6);
+    background-color: rgba(212, 212, 212,0.9);
     position: fixed;
     z-index: 20;
 }
@@ -69,13 +73,13 @@ textarea {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 25px;
-    border-left: 2px solid var(--zlatna);
+    border-left: 2px solid rgba(0, 0, 0, 0.4);
 }
 #meni li a:hover{
     color:var(--zlatna);
 }
-#autor{
-    border-right: 2px solid var(--zlatna);
+.autor{
+    border-right: 2px solid rgba(0, 0, 0, 0.4);
 }
 
 .center_wrapper{
@@ -119,16 +123,16 @@ textarea {
 }
 .btn_container{
     /* background-color: red; */
-
-    margin-top: 40px !important;
-    margin-left: 210px !important;
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 185px !important;
 }
 .btn{
     background-color:var(--zlatna);
     text-align: center;
     /* float: left; */
     font-size: 30px;
-    margin-right: 25px;
+    /* margin-right: 25px; */
     border-radius: 2rem;
     padding: 10px 30px;
 }
@@ -171,7 +175,7 @@ textarea {
     text-align: center;
     font-size: 30px;
     color: var(--zlatna);
-    margin-top: 50px;
+    margin-top: 50px !important;
   
 }
 .hr{
@@ -394,6 +398,7 @@ textarea {
     font-size: 20px;
     border-radius: 7px;
     border: 2px solid rgba(0, 0, 0, 0.5);
+    /* padding: 0px 10px; */
     /* padding: 5px 10px; */
     /* margin: 0px; */
 }
@@ -482,7 +487,90 @@ textarea {
     color: #ffffff;
 }
 /*kraj pocetne------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-#usluge{
-    height: 800px;
+
+/*O AUTORU! ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#author_wrap_image{
+    background-image: url(); /* Nadji neku sliku*/
+}
+
+
+
+
+/*KONTAKT POCINJE OVDE ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#contact_page_wrap_image{
+    background-image: url("../img/contact/contact_wrap_image.jpg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#service_wrap_img{
+
     background-image: url(../img/usluge.jpg);
+}
+.sidepage_wrap_img{
+    height: 800px;
+}
+.btn_custom_width{
+    width: 23%;
+    margin-left: 285px !important;
+}
+#usluge_body{
+    background-color: var(--manjeSiva);
+}
+.text_sheet{
+    width: 70%;
+    margin: 0px auto;
+    background-color: #fff;
+    height: 800px;
+    padding: 60px;
+}
+#criminal_image{
+    width: 45%;
+    height: 600px;
+    /* background-color: red; */
+    background-image: url(../img/criminal.jpg);
+    background-position: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.content_wrapper{
+    width: 50%;
+    height: 600px;
+    background-color: blue;
 }
