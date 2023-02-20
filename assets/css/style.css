@@ -208,11 +208,11 @@ textarea {
 .hover_service :hover{
     background-color: red;
 }
-.service_center{
+.box_center{
     margin-left: 45px;
     margin-top: 40px;
 }
-.service{
+.box{
     margin-right: 15px;
     width: 270px;
     height: 270px;
@@ -223,27 +223,27 @@ textarea {
     padding: 10px;
     border-radius: 10px;
 }
-.service_icon{
+.box_icon{
     font-size: 80px;
 }
-.service_title{
+.box_title{
     text-align: center;
     margin-top: 25px;
 }
-.service_name{
+.box_name{
     width: 80%;
     margin-top: 25px;
 }
-.service_name p{ 
+.box_name p{ 
     text-align: center;
     color: #000000;
     font-size: 25px;
     color: var(--zlatna);
 }
-.service_desc{
+.box_desc{
     margin-top: 10px;
 }
-.service_desc p{
+.box_desc p{
     text-align: center;
     
 }
@@ -499,6 +499,12 @@ textarea {
 /*KONTAKT POCINJE OVDE ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 #contact_page_wrap_image{
     background-image: url("../img/contact/contact_wrap_image.jpg");
+}
+.contant_box_margin{
+    margin: 40px;
+}
+.contact_box_center{
+    margin-left:100px;
 }
 
 
