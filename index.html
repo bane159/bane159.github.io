@@ -6,9 +6,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 <!-- <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/> -->
 <script src="https://kit.fontawesome.com/b982b959fc.js" crossorigin="anonymous"></script>
-
-
-<link rel="icon" type="image/png" href="lawicon.png" />
+<link rel="icon" type="image/png-icon" href="lawicon.png" />
 
 
 
@@ -52,7 +50,7 @@
 
          <!--End Header-->
          <!--Start  center-->
-         <div class="center_container">
+        <div class="center_container">
             <div id="title">
                 <h1>ADVOKATSKA KANCELARIJA</h1>
             </div>
@@ -386,7 +384,7 @@
         </div>
     </div>
     <div class="content">
-        <div id="contact_wrapper" class="block_center mar">
+        <div id="contact_wrapper" class="block_center margin_form">
             <form>
                 <div id="center_form">
 
@@ -401,21 +399,24 @@
                         <input type="tel" name="forename"  class="form_box" id="telephone_box" placeholder="Telefon" required = "required"/>
                     </div>
                     <div class="cleaner"></div>
-                    <div class="margin_form">
+                    <div class="margin_form form_text_holder">
                         <label for="email" class="label_style">Email</label>
                         <input type="email" id="email" name="email" class="form_box" placeholder="E-mail" required = "required"/>
                     </div>
 
-                    <div class="form_title block_left">
+                   
+                    <div class="form_text_holder block_right margin_form">
+                        <label for="meeting_time" class="label_style">Izaberite vreme Konsultacija</label>
+                        <input type="datetime-local" class = "form_box" id="meeting_time" name="meeting-time" value="2023-02-15T19:30" min="2023-02-15T00:00" max="2023-12-31T00:00" />
+
+                    </div>
+       
+                    <div class="cleaner"></div> <!--Ne treba cleaner zbog float left i float right-->
+                    <div class="form_title">
                         <h4>
                             Pol
                         </h4>
                     </div>
-                    <div class="form_title block_right">
-                       <label for="meeting_time">Izaberite vreme Konsultacija</label>
-                    </div>
-                    <div class="cleaner"></div> <!--Ne treba cleaner zbog float left i float right-->
-
                     <div class="margin_form block_left">
                         <label for="sex" class="label_style">Muški</label>
                         <input type="radio" id="male" name="sex" required = "required"/>
@@ -427,9 +428,7 @@
                     </div>
 
 
-                    <div class="block_right margin_form ">
-                        <input type="datetime-local" class = "form_box" id="meeting_time" name="meeting-time" value="2023-02-15T19:30" min="2023-02-15T00:00" max="2023-12-31T00:00" />
-                    </div>
+              
 
 
                     <div class="cleaner">
@@ -454,62 +453,52 @@
 
 
 
-
-<!--Footer Start-->
     <footer class="center_wrapper footer_img">
         <div class="transparent">
-            <div id="footer_centering">
-                <div id="footer_left" class = "test1">
-                    <div class="logo block_center margin_logo_footer">
-                        <a href="index.html">
-                            <img src="assets/img/logo_white.png" alt="logo" />
-                         </a>
-                    </div>
-                    <div class="socials">
-                        <ul>
-                            <li> <a href="www.instagram.com"><i class="fa-brands fa-instagram social_icon"></i> </a></li>
-                            <li> <a href="www.instagram.com"><i class="fa-brands fa-facebook social_icon"></i> </a></li>
-                            <li> <a href="www.instagram.com"><i class="fa-brands fa-twitter social_icon"></i> </a></li>
 
-                        </ul>
-
-                    </div>
-                    <div id="fast_links">
-                        <div class="small_title">
-                            <h4> Brzi linkovi</h4>
-                        </div>
-                        <div id="fast_links_links">
-                            <ul>
-                                <li><a href="index.html"> Početna</a></li>
-                                <li><a href="usluge.html"> Usluge</a></li>
-                                <li><a href="kontakt.html"> Kontakt</a></li>
-                                <li><a href="index.html"> Galerija</a></li>
-                                <li><a href="o_autoru.html"> O autoru</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-                <!-- <div id="footer_right">
-
-
-
-
+                <div class="small_title">
+                    <h2>Brzi linkovi</h2>
                 </div>
 
+                <div class="logo footer_logo_margin block_left">
+                    <a href="index.html">
+                        <img src="assets/img/logo_white.png" alt="logo" />
+                    </a>
+                </div>
+                <div id="fast_links_links">
+                    <ul>
+                        <li><a href="index.html"> Početna</a></li>
+                        <li><a href="usluge.html"> Usluge</a></li>
+                        <li><a href="kontakt.html"> Kontakt</a></li>
+                        <li><a href="index.html"> Galerija</a></li>
+                        <li><a href="o_autoru.html"> O autoru</a></li>
 
+                    </ul>
+                </div>
+      
+                <div class="footer_rss_sitemap block_left">
+                    <ul>
 
+                        <li> <a href="www.instagram.com"><i class="fa-solid fa-rss social_icon"></i> </a></li>
+                        <li> <a href="www.instagram.com"><i class="fa-solid fa-sitemap social_icon"></i> </a></li>
 
-
+                    </ul>
+                </div>
 
                 <div class="cleaner">
-                </div> -->
-            </div>
-        </div>
+
+                </div>
+                <div class="socials">
+                    <ul>
+                        <li> <a href="www.instagram.com"><i class="fa-brands fa-instagram social_icon"></i> </a></li>
+                        <li> <a href="www.instagram.com"><i class="fa-brands fa-facebook social_icon"></i> </a></li>
+                        <li> <a href="www.instagram.com"><i class="fa-brands fa-twitter social_icon"></i> </a></li>
+
+                    </ul>
+
+
+                </div>
+
     </footer>
 
 

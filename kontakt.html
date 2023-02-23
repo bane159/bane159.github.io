@@ -67,79 +67,158 @@
 
     <!-- Start Kontant info-->
 
-    <div class="content">
+<div class="content">
+    <div id="contact_info_holder">
 
-        <div class="box_center contact_box_center">
+        <div class="contact_info contact_info_top">
+            <div class="content_info_title">
             
-
-                <div class="box contant_box_margin">
-                    
-                    
-                    <div class="box_title">
-                        
-                        <i class="fa-duotone fa-envelope-circle-check box_icon"></i>                      
-
-                    </div>
-                    <div class="box_name block_center">
-                        
-                        <p>Obratite nam se putem e-maila</p>
-                        
-                    </div>
-                    <div class="content_text box_desc">
-                    
-                        <p>advokatska.kancelarija@gmail.com</p>
-                    
-                    </div>
-                
-                
-                
-                </div>   
+                <i class="fa-regular fa-address-book contact_info_icon"></i>
+                <h2>Kontakt</h2>
             
-            <div class="box contant_box_margin">
-                <div class="box_title">
-
-                    <i class="fa-solid fa-children box_icon"></i>
-
-                </div>
-                <div class="box_name block_center">
-
-                    <p>Porodično pravo</p>
-
-                </div>
-                <div class="content_text box_desc">
-
-                    <p>Porodica uživa posebnu zaštitu države</p>
-                    
-                </div>
-                
             </div>
-            <div class="box contant_box_margin">
-                <div class="box_title">
-
-                    <i class="fa-solid fa-book service_icon"></i>
-
-                </div>
-                <div class="box_name block_center">
-
-                    <p>Privredno pravo</p>
-
-                </div>
-                <div class="content_text box_desc">
-
-                    <p>Osnivanje privrednih društava, stečaj, likvidacija</p>
-                    
-                </div>
+            <div class="content_info_text">
+                <p> Email: <strong>kancelarija@gmail.com</strong></p>
+                <p> Adresa: <strong>  27. marta, br. 3, 11000, Beograd</strong></p>
+                 <p> Telefon: <a href="tel:+123456789">+123456789</a></p>
             </div>
-    
-
-            <div class="cleaner">
-                
-            </div> 
-
         </div>
     
+        <div class="contact_info contact_info_bot">
+            <div class="content_info_title">
+            
+                     <i class="fa-regular fa-clock contact_info_icon"></i>
+                     <h2>Radno Vreme</h2>
+                
+            </div>
+            <div class="content_info_text">
+                <p>Ponedeljak - Petak: od 9h do 15h</p>
+                <p>Subota: od 12 do 5</p>
+                <p>Nedeljom: Zatvoreno</p>
+            </div>
+        </div>
+        
     </div>
+
     
+        <form>
+            <div id="contact_form_margin" class="block_left">
+
+                <div class="form_text_holder margin_form">
+
+                    <label for="n_box" class="label_style">Ime</label>
+                    <input type="text" name="name" class="form_box" id="n_box" placeholder="Ime" required = "required" />
+
+                </div>
+                <div class="form_text_holder block_right margin_form">
+                    <label for="forename_box" class="label_style">Telefon</label>
+                    <input type="tel" name="forename"  class="form_box" id="telephone_box" placeholder="Telefon" required = "required"/>
+                </div>
+                <div class="cleaner"></div>
+                <div class="margin_form form_text_holder">
+                    <label for="email" class="label_style">Email</label>
+                    <input type="email" id="email" name="email" class="form_box" placeholder="E-mail" required = "required"/>
+                </div>
+
+               
+                <div class="form_text_holder block_right margin_form">
+                    <label for="meeting_time" class="label_style">Izaberite vreme Konsultacija</label>
+                    <input type="datetime-local" class = "form_box" id="meeting_time" name="meeting-time" value="2023-02-15T19:30" min="2023-02-15T00:00" max="2023-12-31T00:00" />
+
+                </div>
+   
+                <div class="cleaner"></div> <!--Ne treba cleaner zbog float left i float right-->
+                <div class="form_title">
+                    <h4>
+                        Pol
+                    </h4>
+                </div>
+                <div class="margin_form block_left">
+                    <label for="sex" class="label_style">Muški</label>
+                    <input type="radio" id="male" name="sex" required = "required"/>
+                </div>
+
+                <div class="margin_form block_left">
+                    <label for="sex" class="label_style label_sex_margin">Ženski</label>
+                    <input type="radio" id="female" name="sex" required = "required"/>
+                </div>
+
+
+          
+
+
+                <div class="cleaner">
+                </div>
+                <div id="message_box">
+                    <textarea placeholder="Ako imate zahteve napišite ih ovde (Opciono)"></textarea>
+                </div>
+                <div id="form_submit">
+                    <input type="submit" id="submit_btn" name="send" class="form_box" value="Pošalji" />
+                </div>
+
+
+
+            </div>
+
+
+        </form>
+
+        <div class="cleaner">
+
+        </div>
+
+</div>
+    
+    
+   
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.529444644398!2d20.46409591579124!3d44.81077758482455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa5821fcb89%3A0xac5187c58ab7d55c!2z0KHRgtCw0YDQuCDQs9GA0LDQtCwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1677089790360!5m2!1ssr!2srs" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer class="center_wrapper footer_img">
+        <div class="transparent">
+
+                <div class="small_title">
+                    <h2>Brzi linkovi</h2>
+                </div>
+
+                <div class="logo footer_logo_margin block_left">
+                    <a href="index.html">
+                        <img src="assets/img/logo_white.png" alt="logo" />
+                    </a>
+                </div>
+                <div id="fast_links_links">
+                    <ul>
+                        <li><a href="index.html"> Početna</a></li>
+                        <li><a href="usluge.html"> Usluge</a></li>
+                        <li><a href="kontakt.html"> Kontakt</a></li>
+                        <li><a href="index.html"> Galerija</a></li>
+                        <li><a href="o_autoru.html"> O autoru</a></li>
+
+                    </ul>
+                </div>
+      
+                <div class="footer_rss_sitemap block_left">
+                    <ul>
+
+                        <li> <a href="www.instagram.com"><i class="fa-solid fa-rss social_icon"></i> </a></li>
+                        <li> <a href="www.instagram.com"><i class="fa-solid fa-sitemap social_icon"></i> </a></li>
+
+                    </ul>
+                </div>
+
+                <div class="cleaner">
+
+                </div>
+                <div class="socials">
+                    <ul>
+                        <li> <a href="www.instagram.com"><i class="fa-brands fa-instagram social_icon"></i> </a></li>
+                        <li> <a href="www.instagram.com"><i class="fa-brands fa-facebook social_icon"></i> </a></li>
+                        <li> <a href="www.instagram.com"><i class="fa-brands fa-twitter social_icon"></i> </a></li>
+
+                    </ul>
+
+
+                </div>
+
+    </footer>
 
 
 
