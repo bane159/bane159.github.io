@@ -27,7 +27,7 @@ textarea{
     --zlatna:rgb(212, 193, 19);
     --siva: rgb(212, 212, 212);
     --manjeSiva: rgb(240, 240, 240);
-    
+
 }
 .cleaner{
     clear: both;
@@ -57,7 +57,7 @@ textarea{
         width: 330px;
         height: 70px;
         margin: 0px 20px;
-   
+
 }
 #meni{
     /* background-color: grey; */
@@ -94,7 +94,7 @@ textarea{
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: inherit;
-    
+
 }
 .center_container{
     position: absolute;
@@ -105,14 +105,22 @@ textarea{
     z-index: 10;
     /* background-color: rgba(0, 0, 0, 0.411); */
 }
+.enterance_right_animation{
+    animation-name: enterance_right;
+    animation-duration: 1.5s;
+}
+@keyframes enterance_right {
+    0%   {left:1920px; top: 320px;}
+    100% { left:550px; top: 320px;}
+}
 #title{
     width: 100%;
     /* background-color: red; */
     text-align: center;
     font-size: 12px;
     color:var(--zlatna);
-    
-    
+
+
 }
 .center_content{
     width: 100%;
@@ -144,10 +152,13 @@ textarea{
 }
 .content{
     width: 68%;
-    margin: 30px auto; 
+    margin: 30px auto;
     /* background-color: blueviolet; */
     /* margin-bottom: 30px;
     margin-top: 30px; */
+}
+.grey_color{
+    background-color: rgba(212, 212, 212,0.15);
 }
 
 #worker_pic{
@@ -156,7 +167,7 @@ textarea{
     height:850px;
     background-image: url(../img/worker.jpg) ;
     background-position: center;
-    float: left;    
+    float: left;
     border: 1px solid #ffffff;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 
@@ -177,7 +188,7 @@ textarea{
     font-size: 30px;
     color: var(--zlatna);
     margin-top: 50px !important;
-  
+
 }
 .hr{
     border-bottom: 2px solid var(--siva);
@@ -238,7 +249,7 @@ textarea{
     width: 80%;
     margin-top: 15px !important;
 }
-.box_name p{ 
+.box_name p{
     text-align: center;
     color: #000000;
     font-size: 25px;
@@ -249,7 +260,7 @@ textarea{
 }
 .box_desc p{
     text-align: center;
-    
+
 }
 /* .service_left{
     margin-left: 140px;
@@ -257,7 +268,7 @@ textarea{
 } */
 #service_text{
     width: 80%;
-    
+
     /* background-color: blue; */
     margin-bottom: 50px;
 }
@@ -268,7 +279,7 @@ textarea{
 .why_us_wrapper{
     width: 48%;
     /* background-color: red; */
-    height: 200px;   
+    height: 200px;
     float: left;
     margin: 5px;
     outline: 1px solid #6b6b6b77;
@@ -318,7 +329,7 @@ textarea{
 }
 .centriran_wrapper{
     margin-right: 34px;
-} 
+}
 #feedback_wrapper{
     width: 100%;
     height: 420px;
@@ -394,7 +405,7 @@ textarea{
 .form_text_holder{
     width: 49%;
     float: left;
-    
+
     /* background-color: blue; */
 }
 .margin_form{
@@ -412,7 +423,7 @@ textarea{
     /* margin: 0px; */
 }
 #form_submit{
-   
+
    width: 20%;
    margin: 20px auto !important;
 }
@@ -429,7 +440,7 @@ textarea{
 
 .form_title{
     font-size: 25px;
-    font-weight: bold; 
+    font-weight: bold;
 }
 .label_sex_margin{
     margin-left:15px;
@@ -462,7 +473,7 @@ textarea{
     /* background-color: rgb(0, 26, 255); */
     /* position: absolute; */
     /* top: 50px;
-    left: 20%; 
+    left: 20%;
 }*/
 
 #footer_content{
@@ -477,7 +488,7 @@ textarea{
     /* height: 70px; */
     /* background-color: grey; */
     margin-top: 10px;
-}    
+}
 .footer_rss_sitemap ul li{
     display: inline;
 }
@@ -487,7 +498,7 @@ textarea{
 }
 .socials li a :hover{
     color: var(--zlatna);
-}                                        
+}
 .social_icon{
     color: #ffffff;
     float: left;
@@ -500,8 +511,8 @@ textarea{
     font-size: 30px;
 }
 #fast_links_links{
-    
-    margin-top: 30px; 
+
+    margin-top: 30px;
     margin-left: 250px;
     float: left;
 
@@ -549,7 +560,7 @@ textarea{
     float: left;
 }
 .content_info_title{
-    width: 100%;  
+    width: 100%;
 }
 .content_info_title h2{
     font-size: 25px;
@@ -563,7 +574,7 @@ textarea{
     /* background-color: red; */
     outline: 1px solid rgba(116, 116, 116, 0.4);
     border-radius: 10px;
-    
+
     padding-top: 20px;
     padding-left: 20px;
 }
@@ -682,16 +693,25 @@ textarea{
 .image_box{
     width: 300px;
     height: 300px;
-    background-color: red;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(49, 49, 49, 0.8);
     transition: width 0.5s ease, height 0.5s ease ;
-    
+    transition-delay:0.05s ;
+    background-position: center;
+
+
 }
 .image_box:hover{
     width: 280px;
     height: 280px;
 }
+.image_dif_trans:hover{
+
+    width: 320px;
+    height: 320px;
+
+}
+
 .image_holder{
     display: flex;
     justify-content: space-evenly;
