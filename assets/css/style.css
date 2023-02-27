@@ -210,17 +210,11 @@ textarea{
     margin-bottom: 20px;
 }
 
-#service_wrapper{
+#gray_wrap{
     width: 100%;
     background-color: rgba(233, 233, 233,0.6);
-    /* padding-top: 30px; */
     padding: 30px 0px;
-    /* padding-bottom: 25px; */
-}
-.hover_service :hover{
-    /* background-color: red; */
-    width: 290px;
-    height: 290px;
+
 }
 .box_center{
     margin-left: 45px;
@@ -232,12 +226,16 @@ textarea{
     height: 270px;
     /* background-color: red; */
     float: left;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(140, 140, 140, 0.542);
     padding: 10px;
     border-radius: 10px;
-    transition: width 0.5s ease, height 0.5s ease;
+    transition: transform 0.5s ease;
 }
+.box:hover, .why_us_wrapper:hover{
+     transform: scale(1.05,1.05);
+}
+
 .box_icon{
     font-size: 80px;
 }
@@ -249,7 +247,7 @@ textarea{
     width: 80%;
     margin-top: 15px !important;
 }
-.box_name p{
+.box_name h3{
     text-align: center;
     color: #000000;
     font-size: 25px;
@@ -283,6 +281,7 @@ textarea{
     float: left;
     margin: 5px;
     outline: 1px solid #6b6b6b77;
+    transition: transform 0.5s ease;
 }
 
 .icon{
@@ -316,16 +315,9 @@ textarea{
     /* background-color: red; */
     margin: 10px auto;
 }
-.why_text{
-    text-align: center !important;
-    /* margin-left: 150px;
-    margin-top: 50px;
-    width: 330px;
-    height: 120px; */
-    /* background-color: orange; */
-}
+
 .why_text p{
-    text-align: left;
+    text-align: center;
 }
 .centriran_wrapper{
     margin-right: 34px;
@@ -393,19 +385,15 @@ textarea{
 #contact_wrapper{
     /* background-color: red; */
     width: 80%;
-    /* height: 500px; */
+
 }
 #center_form{
-    /* margin-left: 45px;
-    margin-bottom: 10px;
-    margin-top: 10px; */
-    /* float: left; */
+
     margin: 10px 70px;
 }
 .form_text_holder{
     width: 49%;
     float: left;
-
     /* background-color: blue; */
 }
 .margin_form{
@@ -418,9 +406,7 @@ textarea{
     font-size: 20px;
     border-radius: 7px;
     border: 2px solid rgba(0, 0, 0, 0.5);
-    /* padding: 0px 10px; */
-    /* padding: 5px 10px; */
-    /* margin: 0px; */
+
 }
 #form_submit{
 
@@ -429,7 +415,7 @@ textarea{
 }
 #submit_btn{
     background-color:var(--zlatna);
-    border-radius: 2rem;
+    border-radius:30px;
     border: none;
     color: #fff;
 }
@@ -459,67 +445,46 @@ textarea{
 
     height: 200px;
     background-image: url(../img/footer_background.jpg);
-    /* padding: 50px 0px; */
     background-position: center;
-    /* position: relative; */
+
 
 }
-.footer_logo_margin{
-    padding-top: 20px;
-}
-/* #footer_centering{
-    width: 100%;
-    height: 200px;
-    /* background-color: rgb(0, 26, 255); */
-    /* position: absolute; */
-    /* top: 50px;
-    left: 20%;
-}*/
 
-#footer_content{
-    /* width: 100%; */
-    /* height: 100%; */
-    /* background-color: red; */
-    margin-left: 380px;
-}
 
-.socials{
-    width: 100%;
-    /* height: 70px; */
-    /* background-color: grey; */
-    margin-top: 10px;
+#footer_bot_container{
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    align-items:center;
+
 }
-.footer_rss_sitemap ul li{
+#footer_rss_sitemap{
+    margin-right: 20px;
+    align-items: baseline;
+   
+}
+#footer_rss_sitemap ul li{
     display: inline;
 }
-.footer_rss_sitemap ul{
-    margin-left: 250px;
-    margin-top: 25px;
-}
-.socials li a :hover{
+
+#footer_rss_sitemap li a :hover{
     color: var(--zlatna);
+    transform: scale(1.2,1.2);
+    transition: transform 0.5s ease;
 }
-.social_icon{
+.m_removal{
+    margin:0px !important;
+}
+.footer_icon{
     color: #ffffff;
-    float: left;
-    margin-left: 65px;
+    display: inline;
+    margin-left: 45px;
     margin-top: 0px;
     font-size: 40px;
 }
 .margin_footer_title{
     padding-top: 15px;
-    margin: 0px auto !important;
-}
-#fast_links .small_title{
-    margin-top: 0px;
-    font-size: 30px;
-}
-#fast_links_links{
-
-    margin-top: 30px;
-    margin-left: 250px;
-    float: left;
-
 }
 #fast_links_links ul li{
     font-size: 30px;
@@ -528,7 +493,11 @@ textarea{
     display: inline;
 }
 #fast_links_links ul li a{
-    color: #ffffff;
+    color: #fff;
+}
+#fast_links_links ul li a:hover{
+    color: var(--zlatna);
+    /* transform: scale(1.2,1.2); */
 }
 /*kraj pocetne------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -707,22 +676,15 @@ textarea{
     width: 300px;
     height: 300px;
     border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(49, 49, 49, 0.8);
-    transition: width 0.5s ease, height 0.5s ease ;
-    transition-delay:0.05s ;
+    box-shadow: 0px 0px 10px 0px rgba(49, 49, 49, 0.8);
+    transition: transform 0.5s ease; 
+    transition-delay:0.05s; 
     background-position: center;
 
 
 }
 .image_box:hover{
-    width: 280px;
-    height: 280px;
-}
-.image_dif_trans:hover{
-
-    width: 320px;
-    height: 320px;
-
+    transform: scale(1.1,1.1);
 }
 
 .image_holder{
