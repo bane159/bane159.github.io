@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&display=swap);
 *{
     margin: 0px;
     padding: 0px;
@@ -85,9 +85,10 @@ textarea{
 .center_wrapper{
     width: 100%;
     height: 1000px;
-    background-image: url('../img/wrapper.jpg');
+    background-image: url(../img/wrapper.jpg);
     background-repeat: no-repeat;
     background-position:right;
+    background-attachment: fixed;
     position: relative;
 }
 .transparent{
@@ -108,6 +109,7 @@ textarea{
 .enterance_right_animation{
     animation-name: enterance_right;
     animation-duration: 1.5s;
+    overflow: hidden;
 }
 @keyframes enterance_right {
     0%   {left:1920px; top: 320px;}
@@ -132,15 +134,13 @@ textarea{
 .btn_container{
     /* background-color: red; */
     width: 50%;
-    margin-top: 40px;
-    margin-left: 185px !important;
+    
+    margin: 40px auto;
 }
 .btn{
     background-color:var(--zlatna);
     text-align: center;
-    /* float: left; */
     font-size: 30px;
-    /* margin-right: 25px; */
     border-radius: 30px;
     padding: 10px 30px;
 }
@@ -154,8 +154,6 @@ textarea{
     width: 68%;
     margin: 30px auto;
     /* background-color: blueviolet; */
-    /* margin-bottom: 30px;
-    margin-top: 30px; */
 }
 .grey_color{
     background-color: rgba(212, 212, 212,0.15);
@@ -169,7 +167,7 @@ textarea{
     background-position: center;
     float: left;
     border: 1px solid #ffffff;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 
 }
 #biography_wrapper{
@@ -177,7 +175,6 @@ textarea{
     margin-left: 2.3%;
     margin-right: 2.3%;
     margin-top: 30px;
-    /* height: 870px; */
     /* background-color: red; */
     float: left;
 }
@@ -333,7 +330,7 @@ textarea{
     height: 427px;
     border-radius: 10px;
     background-image: url(../img/feedback_pic.jpg);
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 #feedback_why{
     width: 50%;
@@ -425,8 +422,7 @@ textarea{
 }
 
 .form_title{
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 22px;
 }
 .label_sex_margin{
     margin-left:15px;
@@ -438,7 +434,6 @@ textarea{
 #message_box{
     width: 100%;
 }
-
 
 /*START FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTER*/
 .footer_img{
@@ -511,7 +506,7 @@ textarea{
 
 /*KONTAKT POCINJE OVDE ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 #contact_page_wrap_image{
-    background-image: url("../img/contact/contact_wrap_image.jpg");
+    background-image: url(../img/contact/contact_wrap_image.jpg);
 }
 .contant_box_margin{
     margin: 40px;
@@ -521,6 +516,7 @@ textarea{
 }
 #contact_info_holder{
     float: left;
+    /* margin-left: 120px; */
 }
 .contact_info_top{
     margin-top: 40px;
@@ -558,38 +554,8 @@ textarea{
 #contact_form_margin{
     margin-left: 60px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.btn_custom_width{
-    width: 23%;
-    margin-left: 285px !important;
+#full iframe{
+    width: 100%;
 }
 
 
@@ -621,25 +587,55 @@ textarea{
 .text_sheet_foot{
     width: 100%;
     height: 200px;
+    display: flex;
+    justify-content: space-between;
+
     /* background-color: red; */
 }
-#criminal_image{
+.text_sheet_image{
     width: 45%;
     height: 600px;
-    background-image: url(../img/criminal.jpg);
     background-position: center;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.text_sheet_image_c{
+    width: 70%;
+    height: 360px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+#criminal_image{
+    background-image: url(../img/criminal.jpg);
+
 }
 .content_wrapper_servise_page{
     width: 50%;
     height: 600px;
     /* background-color: blue; */
 }
-.content_wrapper_servise_page ul li{
+
+.text_sheet ul li{
     list-style-type:circle;
     margin-left: 20px;
     font-size: 20px;
 }
+.left_text_sheet{
+    width: 45%;
+}
+.right_text_sheet{
+    width: 40%;
+}
+.f_mm{
+    margin: 20px auto;
+}
+#family_image{
+    background-image: url(../img/family_law.jpg);
+}
+#commercial_image{
+    background-image: url(../img/commercial.jpg);
+}
+#tax_image{
+    background-image: url(../img/taxlaw.jpg);    
+}  
 
 
 
@@ -669,7 +665,7 @@ textarea{
 
 /*GALERIJA ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 #galery_wrap_image{
-    background-image: url("../img/galery/galery_image_wrap.jpg");
+    background-image: url(../img/galery/galery_image_wrap.jpg);
     background-repeat: no-repeat;
 }
 .image_box{
@@ -693,38 +689,38 @@ textarea{
     margin-top: 50px;
 }
 #gallery_img_1{
-    background-image: url("../img/galery/1.jpg");
+    background-image: url(../img/galery/1.jpg);
 }
 #gallery_img_2{
-    background-image: url("../img/galery/2.jpg");
+    background-image: url(../img/galery/2.jpg);
 }
 #gallery_img_3{
-    background-image: url("../img/galery/3.jpg");
+    background-image: url(../img/galery/3.jpg);
 }
 #gallery_img_4{
-    background-image: url("../img/galery/4.jpg");
+    background-image: url(../img/galery/4.jpg);
 }
 #gallery_img_5{
-    background-image: url("../img/galery/5.jpg");
+    background-image: url(../img/galery/5.jpg);
 }
 #gallery_img_6{
-    background-image: url("../img/galery/6.jpg");
+    background-image: url(../img/galery/6.jpg);
 }
 #gallery_img_7{
-    background-image: url("../img/galery/7.jpg");
+    background-image: url(../img/galery/7.jpg);
 }
 #gallery_img_8{
-    background-image: url("../img/galery/8.jpg");
+    background-image: url(../img/galery/8.jpg);
 }
 #gallery_img_9{
-    background-image: url("../img/galery/9.jpg");
+    background-image: url(../img/galery/9.jpg);
 }
 #gallery_img_10{
-    background-image: url("../img/galery/10.jpg");
+    background-image: url(../img/galery/10.jpg);
 }
 #gallery_img_11{
-    background-image: url("../img/galery/11.jpg");
+    background-image: url(../img/galery/11.jpg);
 }
 #gallery_img_12{
-    background-image: url("../img/galery/12.jpg");
+    background-image: url(../img/galery/12.jpg);
 }
