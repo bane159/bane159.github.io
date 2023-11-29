@@ -679,7 +679,11 @@ textarea{
     background-image: url(../img/taxlaw.jpg);    
 }  
 
-
+#prava{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
 
 
 
